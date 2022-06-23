@@ -47,9 +47,6 @@ variable "region" {
   type        = string
 }
 
-variable "monitoring" {
-  type        = bool
-  description = "(optional) describe your variable"
-}
+
 
   

@@ -4,7 +4,6 @@ resource "aws_instance" "web-server" {
   instance_type               = var.instance_type
   associate_public_ip_address = var.associate_public_ip_address
   key_name                    = aws_key_pair.generated_key.key_name
-  monitoring                  = var.monitoring
 
   root_block_device {
     volume_size           = var.volume_size
