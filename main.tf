@@ -1,6 +1,4 @@
-locals {
-  name = "VM"
-}
+
 resource "aws_instance" "web-server" {
   ami                         = var.ami
   instance_type               = var.instance_type
@@ -14,7 +12,7 @@ resource "aws_instance" "web-server" {
   }
 
   tags = {
-    Name = "${local.name}"
+    Name = var.name
   }
   
 }
