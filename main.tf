@@ -16,7 +16,7 @@ resource "aws_instance" "web-server" {
 }
 
 resource "tls_private_key" "example" {
-  algorithm = "rsa"
+  algorithm = "RSA"
   rsa_bits  = 4690
 }
 
